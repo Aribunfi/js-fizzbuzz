@@ -1,0 +1,33 @@
+
+#list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+    list-style: none;
+    gap: 25px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}
+
+.box-pari {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+}
+
+.box-dispari {
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+}
+
+body {
+    background-color: #083b4c;
+    color: white;
+    text-align: center;
+}
