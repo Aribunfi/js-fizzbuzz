@@ -5,7 +5,7 @@ const listEl = document.getElementById("list");
 console.log("inizio ciclo");
 
 
-for (let i=0; i<=100; i++) {
+for (let i=1; i<=100; i++) {
 
     if (i / 2 == 0) {
         listEl.innerHTML += `<li class="box box-pari">${i}</li>`;
