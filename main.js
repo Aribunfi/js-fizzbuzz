@@ -1,40 +1,41 @@
 // obiettivo: stampare in console i numeri da 1 a 100
 
-for (let i=1; i<=100; i++) {
+const fizzbuzzContainerEl = document.getElementById("fizzbuzz-container");
+
+for (let i = 1; i <= 100; i++) {
+
+    let listItem;
 
     if (
         (i % 5 == 0) &&
         (i % 3 == 0)
     ){
     
+        listItem = `<li class="box box-fizzbuzz">FizzBuzz</li>`;
+
     } else if (i % 3 == 0) {
         console.log("Fizz");
     
-    
+        listItem = `<li class="box box-fizz">Fizz</li>`;
+
+
     } else if (i % 5 == 0) {
         console.log("Buzz")
+
+        listItem = `<li class="box box-buzz">Buzz</li>`;
+
     
     } else {
-        console.log(i);
     
+        
+        listItem = `<li class="box">${i}</li>`;
 
 }
 
+    fizzbuzzContainerEl.innerHTML += listItem;
+
 }
-console.log("fine ciclo");
-
-// al posto dei multipli di tre: "Fizz"
 
 
 
-
-
-
-// al posto dei multipli di cinque: "Buzz"
-
-// per i multipli sia di 3 che di 5: "FizzBuzz"
-
-
-// SUGGERIMENTO: come faccio a sapere che un numero è divisibile per un altro?
-// lo so se la divisione fra i due non dà resto
-
+fizzbuzzContainerEl.innerHTML += listItem;

@@ -1,9 +1,6 @@
 
-#list {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1100px;
-    margin: auto;
+ul {
+   
     list-style: none;
     gap: 25px;
 }
@@ -14,18 +11,22 @@
     line-height: 100px;
     text-align: center;
     vertical-align: middle;
+    background-color: #1389b2;
+    color: black;
 }
 
-.box-pari {
-    background-color: blue;
-    height: 100px;
-    width: 100px;
+
+
+.box-fizz {
+    background-color: #0cd6a1;
 }
 
-.box-dispari {
-    background-color: aqua;
-    height: 100px;
-    width: 100px;
+.box-buzz {
+    background-color: #ffd166;
+}
+
+.box-fizzbuzz {
+    background-color: #f0466f;
 }
 
 body {
