@@ -19,14 +19,14 @@ console.log("fine ciclo");
 
 // al posto dei multipli di tre: "Fizz"
 
-const i = document.getElementById("list")
 
-if (i / 3 == 0) {
-    document.write("Fizz");
+if (i % 3 == 0) {
+listEl.innerHTML="Fizz"; 
 }
-else if (i / 5 == 0) {
-    listEl.innerHTML += `<li class="box box-dispari">${i}</li>`;
-}
+
+listEl.append(listItem);
+
+
 
 
 // al posto dei multipli di cinque: "Buzz"
